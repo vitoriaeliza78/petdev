@@ -1,6 +1,7 @@
 "use client";
 
 import { WhatsappLogoIcon } from '@phosphor-icons/react';
+import Image from 'next/image';
 export function Hero(){
     return(
         <section className="bg-[#E84C3D] text-white relative overflow-hidden">
@@ -33,8 +34,12 @@ export function Hero(){
                         </div>
                     </div>
 
-                    <div className='hidden'>
-                        <h1>FOTO DO CACHORRO</h1>
+                    <div className='hidden md:block h-full'>
+                        <Image
+                            src="/bg-hero.png"
+                            alt="Imagem de um cachorro feliz"
+                            className='object-contain'
+                        />
                     </div>
 
                 </article>
