@@ -1,13 +1,13 @@
 import { About } from "./_components/about";
 import { Hero } from "./_components/hero";
-import { Servico } from "./_components/servico";
+import { Service } from "./_components/service";
 
-export default function Home(){
-  return(
+export default function Home() {
+  return (
     <main>
-      <Hero/>
-      <About/>
-      <Servico/>
+      <Hero />
+      <About />
+      <Service />
     </main>
   )
 }
