@@ -58,12 +58,26 @@ export function Service() {
             <div className="container mx-auto px-4">
 
                 <h2 className="text-4xl font-bold mb-12">Nossos Serviços</h2>
+
                 <div className="relative'">
+
                     <div className='overflow-hidden' ref={emblaRef}>
                         <div className='flex'>
-                            {services.map(( item, index) => (
-                                <div className='flex'>
-
+                            {services.map((item, index) => (
+                                <div key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3">{/*Pega 100% da largura no mobile e 1/3 no desktop* do espaço quando mobile*/}
+                                    <article className='bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col'>
+                                        <div className='flex-1 flex items-start justify-between'>
+                                            <div>
+                                                <span className='text-3xl'>{item.icon}</span>
+                                                <div>
+                                                    <h3 className='font'>{item.title}</h3>
+                                                    <p>
+                                                        {item.description}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
                                 </div>
                             ))}
                         </div>
