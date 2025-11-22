@@ -11,7 +11,7 @@ import Image from 'next/image';
 const testemonials = [
     {
         content:'Desde que comecei a usar os serviços oferecidos, minha vida mudou completamente. A equipe é extremamente profissional e dedicada, garantindo que todas as minhas necessidades sejam atendidas com excelência. Recomendo a todos que buscam qualidade e confiança.',
-        author:'Mariana Souza',
+        author:'Vitória Santana',
         role:'tutora da Luna (Shih Tzu)',
         image:MinhaImg
     },
@@ -71,10 +71,11 @@ export function Testimonials() {
                                             </div>
 
                                                 <p className='text-gray-200'>{item.content}</p>
-                                       
+                                            
+                                            <div>
                                                 <p className='font-bold'>{item.author}</p>
                                                 <p className='text-sm text-gray-400'>{item.role}</p>
-                                            
+                                            </div>
                                         </div>
 
                                        
