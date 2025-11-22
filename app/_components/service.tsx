@@ -3,7 +3,6 @@
 import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { WhatsappLogoIcon } from '@phosphor-icons/react';
-import { title } from 'process';
 
 const services = [
     {
@@ -69,7 +68,7 @@ export function Service() {
 
                 <h2 className="text-4xl font-bold mb-12">Nossos Serviços</h2>
 
-                <div className="relative'">
+                <div className="relative">
 
                     <div className='overflow-hidden' ref={emblaRef}>
                         <div className='flex'>
@@ -113,22 +112,25 @@ export function Service() {
 
                     {/* Botões de navegação */}
 
-                    <button className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute
-                    left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'
-                    onClick={scrollPrev}
-                    >
-                        <ChevronLeft 
-                        className='w-6 h-6 text-gray-600 ' />
+                    <button
+                        className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3
+                        -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'
+                        onClick={scrollPrev}
+                        >
+                        <ChevronLeft
+                            className='w-6 h-6 text-gray-600 '
+                        />
                     </button>
-
-                    <button className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute
-                    right-3  top-1/2 z-10'
-                    onClick={scrollNext}
-                    >
+                    
+                    <button
+                        className='bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-6
+                        -translate-y-1/2 -translate-x-1/2 top-1/2 z-10'
+                        onClick={scrollNext}
+                        >
                         <ChevronRight
-                        className='w-6 h-6 text-gray-600 ' />
+                            className='w-6 h-6 text-gray-600 '
+                        />
                     </button>
-
                 </div>
             </div>
         </section>
