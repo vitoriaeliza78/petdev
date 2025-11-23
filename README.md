@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🐶 PetShop Dev
 
-## Getting Started
+Este é o PetShop Dev, um projeto que desenvolvi baseado no vídeo do canal Sujeito Programador. Durante o desenvolvimento, aprendi vários conceitos importantes de Next.js, JavaScript, Tailwind CSS, animações e integração com o WhatsApp.
 
-First, run the development server:
+📌 O projeto já está no ar!
+👉 https://petshopdev-five.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br>
+🚀 Tecnologias que utilizei
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="left">
+<img src="https://skillicons.dev/icons?i=nextjs" width="20" /> <strong>Next.js</strong>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<img src="https://skillicons.dev/icons?i=react" width="20" /> React
 
-## Learn More
+<img src="https://skillicons.dev/icons?i=tailwind" width="20" /> Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+<img src="https://skillicons.dev/icons?i=javascript" width="20" /> JavaScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API do WhatsApp
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Biblioteca AOS (Animate On Scroll)
 
-## Deploy on Vercel
+</p>
+<br>
+📚 O que eu aprendi<br>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+--------------------------------------------------------------
+✔️ 1. Trabalhar com arrays com várias opções
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Aprendi a criar arrays com diferentes serviços e informações, e exibir tudo dinamicamente na interface. Isso deixou o projeto mais flexível e organizado.
+
+----------------------------------------------------------------
+✔️ 2. Criar e organizar componentes no Next.js
+
+Aprendi a estrutura de componentes reutilizáveis, entendendo:
+
+Como separar arquivos
+
+Como passar props
+
+Como organizar pastas (components/, app/)
+
+Isso ajudou o projeto a ficar mais limpo e profissional.
+
+-----------------------------------------------------------------
+✔️ 3. Estilizar com Tailwind CSS
+
+Com Tailwind, consegui:
+
+Criar um layout responsivo
+
+Usar classes utilitárias rápidas
+
+Aplicar sombras, espaçamentos, cores e tipografia
+
+Desenvolver páginas com mais agilidade
+
+---------------------------------------------
+✔️ 4. Integrar a API do WhatsApp
+
+Implementei um botão que abre diretamente uma conversa no WhatsApp com mensagem pronta.
+
+---------------------------------------------------------
+✔️ 5. Implementar animações com AOS (Animate On Scroll)
+
+Usei a biblioteca AOS para criar animações ao rolar a página, deixando a experiência mais suave e interativa.
+Com ela, consegui adicionar efeitos como:
+
+Fade-in
+
+Slide
+
+Zoom
+
+Movimentos suaves nos cards e seções
+
+A configuração foi simples: bastou importar o AOS e iniciar com AOS.init(), além de aplicar atributos como data-aos="fade-up" nos elementos.
+
+------------------------------------------------------------------------
+🐾 Funcionalidades
+
+✔️ Cards de serviços gerados por arrays
+
+✔️ Layout responsivo com Tailwind
+
+✔️ Animações interativas
+
+✔️ Botão com integração ao WhatsApp
+
+✔️ Componentes organizados no Next.js
+
+✔️ Site hospedado e publicado na Vercel
+
+--------------------------------------------------
+📂 Estrutura<br>
+petshop-dev/<br>
+├── app/<br>
+├── <strong>_components</strong><br>
+│ ├── <strong>about.tsx</strong><br>
+│ ├── <strong>aos-init.tsx</strong><br>
+│ ├── <strong>footer.tsx</strong><br>
+│ ├── <strong>hero.tsx</strong><br>
+│ ├── <strong>service.tsx</strong><br>
+│ ├── <strong>testimonials.tsx</strong><br>
+├── public/<br>
+├── package.json<br>
+
+-------------------------------------
+🖼️ Preview
+
+👉 Acesse o site: https://petshopdev-five.vercel.app/
+
+---------------------------------------
+🙏 Créditos
+
+Projeto desenvolvido com base no vídeo:
+“Criar LANDING PAGE profissional do ZERO + Next JS” — Sujeito Programador
