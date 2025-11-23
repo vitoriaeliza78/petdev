@@ -9,9 +9,12 @@ export function About() {
             <div className="container px-4 mx-auto"> {/*Delimitar o tamanho*/}
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div className="relative">
+                    <div className="relative ">
 
-                        <div className="relative w-full h-[400px] rounded-3xl overflow-hidden"> {/*overflow-hidden para cortar o que passar do container*/}
+                        <div className="relative w-full h-[400px] rounded-3xl overflow-hidden"
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-delay="500"> {/*overflow-hidden para cortar o que passar do container*/}
                             <Image
                                 src={About1Imag}
                                 alt="foto do cachorro"
@@ -35,7 +38,10 @@ export function About() {
                     </div>
 
                     {/*Sobre do texto*/}
-                    <div className="space-y-6 m-10">{/*Espaçamento entre os elementos*/}
+                    <div className="space-y-6 m-10" 
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-delay="300"> {/*Espaçamento entre os elementos*/}
                         <h2 className="text-4xl font-bold">SOBRE</h2>
 
                         <p>
@@ -63,7 +69,9 @@ export function About() {
                         </ul>
 
                         <div className="flex gap-2">
-                            <a href="#"
+                            <a
+                                target='_blank'
+                                href={'https://wa.me/5567983478457?text=Olá vim pelo site e gostaria de saber mais informações'}
                                 className="bg-[#E84C3D] text-white flex items-center justify-center
                                     w-fit gap-2 px-4 py-2 rounded-b-md">
                                 <WhatsappLogoIcon className="w-5 h-5 text-white" />

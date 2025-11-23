@@ -65,6 +65,7 @@ export function Testimonials() {
                                                 src={item.image}
                                                 alt={item.content}
                                                 fill
+                                                quality={100}
                                                 sizes='96px'
                                                 className='object-cover rounded-full '
                                                 />

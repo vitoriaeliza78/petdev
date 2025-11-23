@@ -7,8 +7,10 @@ import Image from 'next/image';
 export function Hero(){
     return(
         <section className="bg-[#E84C3D] text-white relative overflow-hidden">
-            <div>
+            <div >
                 <Image
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
                     src={dogImage}
                     alt="Imagem do fundo do dog"
                     fill //preenche o container
@@ -25,19 +27,25 @@ export function Hero(){
                 <article className='grid grid-cols-1 lg:grid-cols-2 gap-8 '>
                     
                     <div className='space-y-6'>
-                        <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold leading-10'>
+                        <h1 
+                        className='text-3xl md:text-4xl lg:text-5xl font-bold leading-10'
+                        data-aos="fade-down">
                             Seu pet merece cuidado, carinho e atenção especial.
                         </h1>
                     
-                        <p className="lg:text-lg">
+                        <p className="lg:text-lg"
+                            data-aos="fade-right">
                             Oferecemos os melhores serviços para garantir o bem-estar e a
                             felicidade do seu amigo de quatro patas.
                         </p>
 
                             <a
-                            href="#"
+                            target='_blank'
+                            href={'https://wa.me/5567983478457?text=Olá vim pelo site e gostaria de saber mais informações'}
                             className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center
                             justify-center w-fit gap-2"
+                            data-aos="zoom-in"
+                            data-aos-delay="800"
                             >
                                 <WhatsappLogoIcon className='w-5 h-5'/>
                                 Contato via WhatsApp
